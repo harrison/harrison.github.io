@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Markdown基本语法 | Vanalso`s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="个人技术博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.7cfabf05.css" as="style"><link rel="preload" href="/assets/js/app.3e685136.js" as="script"><link rel="preload" href="/assets/js/2.83fabbb5.js" as="script"><link rel="preload" href="/assets/js/23.08f5c5e5.js" as="script"><link rel="prefetch" href="/assets/js/10.56f2b805.js"><link rel="prefetch" href="/assets/js/11.4f0f1c6a.js"><link rel="prefetch" href="/assets/js/12.129b580b.js"><link rel="prefetch" href="/assets/js/13.ef758a25.js"><link rel="prefetch" href="/assets/js/14.69649e3d.js"><link rel="prefetch" href="/assets/js/15.e636b568.js"><link rel="prefetch" href="/assets/js/16.45585314.js"><link rel="prefetch" href="/assets/js/17.e3df64a4.js"><link rel="prefetch" href="/assets/js/18.bc26da03.js"><link rel="prefetch" href="/assets/js/19.5b76e381.js"><link rel="prefetch" href="/assets/js/20.fd75de0d.js"><link rel="prefetch" href="/assets/js/21.16d4774a.js"><link rel="prefetch" href="/assets/js/22.49b46af5.js"><link rel="prefetch" href="/assets/js/24.2ada96a3.js"><link rel="prefetch" href="/assets/js/25.17327198.js"><link rel="prefetch" href="/assets/js/26.6a491d3a.js"><link rel="prefetch" href="/assets/js/27.72a0f683.js"><link rel="prefetch" href="/assets/js/28.255e7363.js"><link rel="prefetch" href="/assets/js/29.4233bca7.js"><link rel="prefetch" href="/assets/js/3.ee4e5741.js"><link rel="prefetch" href="/assets/js/30.2b335a48.js"><link rel="prefetch" href="/assets/js/31.d9173822.js"><link rel="prefetch" href="/assets/js/32.2ae323e2.js"><link rel="prefetch" href="/assets/js/4.e268862a.js"><link rel="prefetch" href="/assets/js/5.6366a367.js"><link rel="prefetch" href="/assets/js/6.2958d7f8.js"><link rel="prefetch" href="/assets/js/7.4c227d82.js"><link rel="prefetch" href="/assets/js/8.02ff2851.js"><link rel="prefetch" href="/assets/js/9.8a0c0a88.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7cfabf05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vanalso`s Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/css.html" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/web/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue3.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/web/Webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/fontawesome.html" class="nav-link">
+  fontawesome
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/script/preload.html" class="nav-link">
+  自动预加载
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台" class="dropdown-title"><span class="title">后台</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台" class="mobile-dropdown-title"><span class="title">后台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/php.html" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/server/nodejs.html" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/server/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/server/go.html" class="nav-link">
+  Go
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/markdown.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tools/uglifyjs.html" class="nav-link">
+  js压缩
+</a></li><li class="dropdown-item"><!----> <a href="/tools/datamanage.html" class="nav-link">
+  资料包管理系统操作指南
+</a></li><li class="dropdown-item"><!----> <a href="/tools/template.html" class="nav-link">
+  项目模版搭建
+</a></li><li class="dropdown-item"><!----> <a href="/tools/answer.html" class="nav-link">
+  答题活动立项说明
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/os/mac.html" class="nav-link">
+  Mac OS
+</a></li><li class="dropdown-item"><!----> <a href="/os/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Bug" class="dropdown-title"><span class="title">Bug</span> <span class="arrow down"></span></button> <button type="button" aria-label="Bug" class="mobile-dropdown-title"><span class="title">Bug</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bug/bug.html" class="nav-link">
+  Bug
+</a></li></ul></div></div><div class="nav-item"><a href="/other/other.html" class="nav-link">
+  杂项
+</a></div><div class="nav-item"><a href="https://github.com/harrison" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/css.html" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/web/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue3.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/web/Webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/fontawesome.html" class="nav-link">
+  fontawesome
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/script/preload.html" class="nav-link">
+  自动预加载
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台" class="dropdown-title"><span class="title">后台</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台" class="mobile-dropdown-title"><span class="title">后台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/php.html" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/server/nodejs.html" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/server/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/server/go.html" class="nav-link">
+  Go
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/markdown.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tools/uglifyjs.html" class="nav-link">
+  js压缩
+</a></li><li class="dropdown-item"><!----> <a href="/tools/datamanage.html" class="nav-link">
+  资料包管理系统操作指南
+</a></li><li class="dropdown-item"><!----> <a href="/tools/template.html" class="nav-link">
+  项目模版搭建
+</a></li><li class="dropdown-item"><!----> <a href="/tools/answer.html" class="nav-link">
+  答题活动立项说明
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/os/mac.html" class="nav-link">
+  Mac OS
+</a></li><li class="dropdown-item"><!----> <a href="/os/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Bug" class="dropdown-title"><span class="title">Bug</span> <span class="arrow down"></span></button> <button type="button" aria-label="Bug" class="mobile-dropdown-title"><span class="title">Bug</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bug/bug.html" class="nav-link">
+  Bug
+</a></li></ul></div></div><div class="nav-item"><a href="/other/other.html" class="nav-link">
+  杂项
+</a></div><div class="nav-item"><a href="https://github.com/harrison" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Markdown基本语法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tools/markdown.html#一、标题" class="sidebar-link">一、标题</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#这是二级标题" class="sidebar-link">这是二级标题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tools/markdown.html#这是三级标题" class="sidebar-link">这是三级标题</a></li></ul></li><li><a href="/tools/markdown.html#二、字体" class="sidebar-link">二、字体</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#三、引用" class="sidebar-link">三、引用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#四、分割线" class="sidebar-link">四、分割线</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#五、图片" class="sidebar-link">五、图片</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#六、超链接" class="sidebar-link">六、超链接</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#七、列表" class="sidebar-link">七、列表</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#八、表格" class="sidebar-link">八、表格</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#九、代码" class="sidebar-link">九、代码</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/markdown.html#十、流程图" class="sidebar-link">十、流程图</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="markdown基本语法"><a href="#markdown基本语法" class="header-anchor">#</a> Markdown基本语法</h1> <p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p> <p>相比WYSIWYG编辑器</p> <p><strong>优点：</strong>
+1、因为是纯文本，所以只要支持Markdown的地方都能获得一样的编辑效果，可以让作者摆脱排版的困扰，专心写作。
+2、操作简单。比如:WYSIWYG编辑时标记个标题，先选中内容，再点击导航栏的标题按钮，选择几级标题。要三个步骤。而Markdown只需要在标题内容前加#即可</p> <p><strong>缺点：</strong>
+1、需要记一些语法（当然，是很简单。五分钟学会）。
+2、有些平台不支持Markdown编辑模式。</p> <h2 id="一、标题"><a href="#一、标题" class="header-anchor">#</a> 一、标题</h2> <p>在想要设置为标题的文字前面加#来表示
+一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p> <p>注：标准语法一般在#后跟个空格再写文字。</p> <p>示例：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token title important"><span class="token punctuation">#</span> 这是一级标题</span>
+<span class="token title important"><span class="token punctuation">##</span> 这是二级标题</span>
+<span class="token title important"><span class="token punctuation">###</span> 这是三级标题</span>
+<span class="token title important"><span class="token punctuation">####</span> 这是四级标题</span>
+<span class="token title important"><span class="token punctuation">#####</span> 这是五级标题</span>
+<span class="token title important"><span class="token punctuation">######</span> 这是六级标题</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>效果如下：</p> <h1 id="这是一级标题"><a href="#这是一级标题" class="header-anchor">#</a> 这是一级标题</h1> <h2 id="这是二级标题"><a href="#这是二级标题" class="header-anchor">#</a> 这是二级标题</h2> <h3 id="这是三级标题"><a href="#这是三级标题" class="header-anchor">#</a> 这是三级标题</h3> <h4 id="这是四级标题"><a href="#这是四级标题" class="header-anchor">#</a> 这是四级标题</h4> <h5 id="这是五级标题"><a href="#这是五级标题" class="header-anchor">#</a> 这是五级标题</h5> <h6 id="这是六级标题"><a href="#这是六级标题" class="header-anchor">#</a> 这是六级标题</h6> <h2 id="二、字体"><a href="#二、字体" class="header-anchor">#</a> 二、字体</h2> <ul><li><strong>加粗</strong>
+要加粗的文字左右分别用两个*号包起来</li> <li><strong>斜体</strong>
+要倾斜的文字左右分别用一个*号包起来</li> <li><strong>斜体加粗</strong>
+要倾斜和加粗的文字左右分别用三个*号包起来</li> <li><strong>删除线</strong>
+要加删除线的文字左右分别用两个~~号包起来
+注意：~~来做删除线被认为是不规范的markdown语法，js渲染那边会去掉。
+可以用del语法</li></ul> <p>示例：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code>  <span class="token bold"><span class="token punctuation">**</span><span class="token content">这是加粗的文字</span><span class="token punctuation">**</span></span>
+  <span class="token italic"><span class="token punctuation">*</span><span class="token content">这是倾斜的文字</span><span class="token punctuation">*</span></span>
+  <span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token italic"><span class="token punctuation">*</span><span class="token content">这是斜体加粗的文字</span><span class="token punctuation">*</span></span></span><span class="token punctuation">**</span></span>
+  <span class="token strike"><span class="token punctuation">~~</span><span class="token content">这是加删除线的文字</span><span class="token punctuation">~~</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">&gt;</span></span>这是加删除线的文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">/&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>效果如下：
+<strong>这是加粗的文字</strong> <em>这是倾斜的文字</em> <em><strong>这是斜体加粗的文字</strong></em> <s>这是加删除线的文字</s> <del>这是加删除线的文字<del></del></del></p> <h2 id="三、引用"><a href="#三、引用" class="header-anchor">#</a> 三、引用</h2> <p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;
+n个...
+貌似可以一直加下去，但没神马卵用</p> <p>示例：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token blockquote punctuation">&gt;</span>这是引用的内容
+<span class="token blockquote punctuation">&gt;&gt;</span>这是引用的内容
+<span class="token blockquote punctuation">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>这是引用的内容
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>效果如下：</p> <blockquote><p>这是引用的内容</p> <blockquote><p>这是引用的内容</p> <blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote> <h2 id="四、分割线"><a href="#四、分割线" class="header-anchor">#</a> 四、分割线</h2> <p>三个或者三个以上的 - 或者 * 都可以。</p> <p>示例：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token title important">---
+<span class="token punctuation">----</span></span>
+<span class="token hr punctuation">***</span>
+<span class="token hr punctuation">*****</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>效果如下：
+可以看到，显示效果是一样的。</p> <hr> <hr> <hr> <hr> <h2 id="五、图片"><a href="#五、图片" class="header-anchor">#</a> 五、图片</h2> <p>语法：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code>![图片alt](图片地址 ''图片title'')
+
+图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
+图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>示例：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code>![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg &quot;区块链&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>效果如下：
+![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg &quot;区块链&quot;)</p> <h2 id="六、超链接"><a href="#六、超链接" class="header-anchor">#</a> 六、超链接</h2> <p>语法：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token url">[<span class="token content">超链接名</span>](<span class="token url">超链接地址</span> <span class="token string">&quot;超链接title&quot;</span>)</span>
+title可加可不加
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>示例：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token url">[<span class="token content">简书</span>](<span class="token url">http://jianshu.com</span>)</span>
+<span class="token url">[<span class="token content">百度</span>](<span class="token url">http://baidu.com</span>)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>效果如下：</p> <p><a href="http://jianshu.com" target="_blank" rel="noopener noreferrer">简书<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="http://baidu.com" target="_blank" rel="noopener noreferrer">百度<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="七、列表"><a href="#七、列表" class="header-anchor">#</a> 七、列表</h2> <h4 id="无序列表"><a href="#无序列表" class="header-anchor">#</a> 无序列表</h4> <p>语法：
+无序列表用 - + * 任何一种都可以</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token list punctuation">-</span> 列表内容
+<span class="token list punctuation">+</span> 列表内容
+<span class="token list punctuation">*</span> 列表内容
+
+注意：- + * 跟内容之间都要有一个空格
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>效果如下：</p> <ul><li>列表内容</li></ul> <ul><li>列表内容</li></ul> <ul><li>列表内容</li></ul> <h4 id="有序列表"><a href="#有序列表" class="header-anchor">#</a> 有序列表</h4> <p>语法：
+数字加点</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token list punctuation">1.</span> 列表内容
+<span class="token list punctuation">2.</span> 列表内容
+<span class="token list punctuation">3.</span> 列表内容
+
+注意：序号跟内容之间要有空格
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>效果如下：</p> <ol><li>列表内容</li> <li>列表内容</li> <li>列表内容</li></ol> <h4 id="列表嵌套"><a href="#列表嵌套" class="header-anchor">#</a> 列表嵌套</h4> <p><strong>上一级和下一级之间敲tab即可</strong></p> <ul><li>列表内容
+<ul><li>列表内容</li> <li>列表内容</li> <li>列表内容
+<ul><li>列表内容</li> <li>列表内容</li></ul></li></ul></li></ul> <h2 id="八、表格"><a href="#八、表格" class="header-anchor">#</a> 八、表格</h2> <p>语法：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> 表头 </span><span class="token punctuation">|</span><span class="token table-header important"> 表头  </span><span class="token punctuation">|</span><span class="token table-header important"> 表头 </span><span class="token punctuation">|</span>
+</span><span class="token table-line"><span class="token punctuation">|</span> <span class="token punctuation">----</span> <span class="token punctuation">|</span> <span class="token punctuation">:---:</span> <span class="token punctuation">|</span> <span class="token punctuation">---:</span> <span class="token punctuation">|</span>
+</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> 内容 </span><span class="token punctuation">|</span><span class="token table-data"> 内容  </span><span class="token punctuation">|</span><span class="token table-data"> 内容 </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> 内容 </span><span class="token punctuation">|</span><span class="token table-data"> 内容  </span><span class="token punctuation">|</span><span class="token table-data"> 内容 </span><span class="token punctuation">|</span>
+</span></span>
+第二行分割表头和内容。
+<span class="token list punctuation">-</span> 有一个就行，为了对齐，多加了几个
+文字默认居左
+-两边加：表示文字居中
+-右边加：表示文字居右
+注：原生的语法两边都要用 | 包起来。此处省略
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>示例：</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> 姓名 </span><span class="token punctuation">|</span><span class="token table-header important"> 技能  </span><span class="token punctuation">|</span><span class="token table-header important"> 排行 </span><span class="token punctuation">|</span>
+</span><span class="token table-line"><span class="token punctuation">|</span> <span class="token punctuation">----</span> <span class="token punctuation">|</span> <span class="token punctuation">:---:</span> <span class="token punctuation">|</span> <span class="token punctuation">---:</span> <span class="token punctuation">|</span>
+</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> 刘备 </span><span class="token punctuation">|</span><span class="token table-data">  哭   </span><span class="token punctuation">|</span><span class="token table-data"> 大哥 </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> 关羽 </span><span class="token punctuation">|</span><span class="token table-data">  打   </span><span class="token punctuation">|</span><span class="token table-data"> 二哥 </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> 张飞 </span><span class="token punctuation">|</span><span class="token table-data">  骂   </span><span class="token punctuation">|</span><span class="token table-data"> 三弟 </span><span class="token punctuation">|</span>
+</span></span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>效果如下：</p> <table><thead><tr><th>姓名</th> <th style="text-align:center;">技能</th> <th style="text-align:right;">排行</th></tr></thead> <tbody><tr><td>刘备</td> <td style="text-align:center;">哭</td> <td style="text-align:right;">大哥</td></tr> <tr><td>关羽</td> <td style="text-align:center;">打</td> <td style="text-align:right;">二哥</td></tr> <tr><td>张飞</td> <td style="text-align:center;">骂</td> <td style="text-align:right;">三弟</td></tr></tbody></table> <h2 id="九、代码"><a href="#九、代码" class="header-anchor">#</a> 九、代码</h2> <p>语法：
+单行代码：代码之间分别用一个反引号包起来</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token code keyword">`代码内容`</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code>(```)
+  代码...
+  代码...
+  代码...
+(```)
+
+注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>示例：
+单行代码</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token code keyword">`create database hero;`</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>代码块</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code>(```)
+    function fun(){
+         echo &quot;这是一句非常牛逼的代码&quot;;
+    }
+    fun();
+(```)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>效果如下：</p> <p>单行代码
+<code>create database hero;</code>
+代码块</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    function fun(){
+         echo &quot;这是一句非常牛逼的代码&quot;;
+    }
+    fun();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="十、流程图"><a href="#十、流程图" class="header-anchor">#</a> 十、流程图</h2> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code>```flow
+st=&gt;start: 开始
+op=&gt;operation: My Operation
+cond=&gt;condition: Yes or No?
+e=&gt;end
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+&amp;```
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>效果如下：</p> <div class="language-flow line-numbers-mode"><pre class="language-flow"><code>st<span class="token operator">=&gt;</span>start<span class="token operator">:</span> 开始
+op<span class="token operator">=&gt;</span>operation<span class="token operator">:</span> My Operation
+cond<span class="token operator">=&gt;</span>condition<span class="token operator">:</span> Yes or No<span class="token operator">?</span>
+e<span class="token operator">=&gt;</span>end
+st<span class="token operator">-</span><span class="token operator">&gt;</span>op<span class="token operator">-</span><span class="token operator">&gt;</span>cond
+<span class="token function">cond</span><span class="token punctuation">(</span>yes<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>e
+<span class="token function">cond</span><span class="token punctuation">(</span>no<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>op
+<span class="token operator">&amp;</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>`</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新：:</span> <span class="time">3/12/2024, 3:17:51 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3e685136.js" defer></script><script src="/assets/js/2.83fabbb5.js" defer></script><script src="/assets/js/23.08f5c5e5.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于通用化前端组件拆分与项目模版搭建 | Vanalso`s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="个人技术博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.7cfabf05.css" as="style"><link rel="preload" href="/assets/js/app.3e685136.js" as="script"><link rel="preload" href="/assets/js/2.83fabbb5.js" as="script"><link rel="preload" href="/assets/js/24.2ada96a3.js" as="script"><link rel="prefetch" href="/assets/js/10.56f2b805.js"><link rel="prefetch" href="/assets/js/11.4f0f1c6a.js"><link rel="prefetch" href="/assets/js/12.129b580b.js"><link rel="prefetch" href="/assets/js/13.ef758a25.js"><link rel="prefetch" href="/assets/js/14.69649e3d.js"><link rel="prefetch" href="/assets/js/15.e636b568.js"><link rel="prefetch" href="/assets/js/16.45585314.js"><link rel="prefetch" href="/assets/js/17.e3df64a4.js"><link rel="prefetch" href="/assets/js/18.bc26da03.js"><link rel="prefetch" href="/assets/js/19.5b76e381.js"><link rel="prefetch" href="/assets/js/20.fd75de0d.js"><link rel="prefetch" href="/assets/js/21.16d4774a.js"><link rel="prefetch" href="/assets/js/22.49b46af5.js"><link rel="prefetch" href="/assets/js/23.08f5c5e5.js"><link rel="prefetch" href="/assets/js/25.17327198.js"><link rel="prefetch" href="/assets/js/26.6a491d3a.js"><link rel="prefetch" href="/assets/js/27.72a0f683.js"><link rel="prefetch" href="/assets/js/28.255e7363.js"><link rel="prefetch" href="/assets/js/29.4233bca7.js"><link rel="prefetch" href="/assets/js/3.ee4e5741.js"><link rel="prefetch" href="/assets/js/30.2b335a48.js"><link rel="prefetch" href="/assets/js/31.d9173822.js"><link rel="prefetch" href="/assets/js/32.2ae323e2.js"><link rel="prefetch" href="/assets/js/4.e268862a.js"><link rel="prefetch" href="/assets/js/5.6366a367.js"><link rel="prefetch" href="/assets/js/6.2958d7f8.js"><link rel="prefetch" href="/assets/js/7.4c227d82.js"><link rel="prefetch" href="/assets/js/8.02ff2851.js"><link rel="prefetch" href="/assets/js/9.8a0c0a88.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7cfabf05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vanalso`s Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/css.html" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/web/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue3.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/web/Webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/fontawesome.html" class="nav-link">
+  fontawesome
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/script/preload.html" class="nav-link">
+  自动预加载
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台" class="dropdown-title"><span class="title">后台</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台" class="mobile-dropdown-title"><span class="title">后台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/php.html" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/server/nodejs.html" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/server/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/server/go.html" class="nav-link">
+  Go
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tools/uglifyjs.html" class="nav-link">
+  js压缩
+</a></li><li class="dropdown-item"><!----> <a href="/tools/datamanage.html" class="nav-link">
+  资料包管理系统操作指南
+</a></li><li class="dropdown-item"><!----> <a href="/tools/template.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  项目模版搭建
+</a></li><li class="dropdown-item"><!----> <a href="/tools/answer.html" class="nav-link">
+  答题活动立项说明
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/os/mac.html" class="nav-link">
+  Mac OS
+</a></li><li class="dropdown-item"><!----> <a href="/os/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Bug" class="dropdown-title"><span class="title">Bug</span> <span class="arrow down"></span></button> <button type="button" aria-label="Bug" class="mobile-dropdown-title"><span class="title">Bug</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bug/bug.html" class="nav-link">
+  Bug
+</a></li></ul></div></div><div class="nav-item"><a href="/other/other.html" class="nav-link">
+  杂项
+</a></div><div class="nav-item"><a href="https://github.com/harrison" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/css.html" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/web/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue3.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/web/Webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/fontawesome.html" class="nav-link">
+  fontawesome
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/script/preload.html" class="nav-link">
+  自动预加载
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台" class="dropdown-title"><span class="title">后台</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台" class="mobile-dropdown-title"><span class="title">后台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/php.html" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/server/nodejs.html" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/server/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/server/go.html" class="nav-link">
+  Go
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tools/uglifyjs.html" class="nav-link">
+  js压缩
+</a></li><li class="dropdown-item"><!----> <a href="/tools/datamanage.html" class="nav-link">
+  资料包管理系统操作指南
+</a></li><li class="dropdown-item"><!----> <a href="/tools/template.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  项目模版搭建
+</a></li><li class="dropdown-item"><!----> <a href="/tools/answer.html" class="nav-link">
+  答题活动立项说明
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/os/mac.html" class="nav-link">
+  Mac OS
+</a></li><li class="dropdown-item"><!----> <a href="/os/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Bug" class="dropdown-title"><span class="title">Bug</span> <span class="arrow down"></span></button> <button type="button" aria-label="Bug" class="mobile-dropdown-title"><span class="title">Bug</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bug/bug.html" class="nav-link">
+  Bug
+</a></li></ul></div></div><div class="nav-item"><a href="/other/other.html" class="nav-link">
+  杂项
+</a></div><div class="nav-item"><a href="https://github.com/harrison" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>关于通用化前端组件拆分与项目模版搭建</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tools/template.html#技术栈" class="sidebar-link">技术栈</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/template.html#开发步骤" class="sidebar-link">开发步骤</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tools/template.html#组件" class="sidebar-link">组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tools/template.html#活动规则组件" class="sidebar-link">活动规则组件</a></li><li class="sidebar-sub-header"><a href="/tools/template.html#内部手机号登陆组件" class="sidebar-link">内部手机号登陆组件</a></li><li class="sidebar-sub-header"><a href="/tools/template.html#排行榜" class="sidebar-link">排行榜</a></li><li class="sidebar-sub-header"><a href="/tools/template.html#答题" class="sidebar-link">答题</a></li><li class="sidebar-sub-header"><a href="/tools/template.html#拼图" class="sidebar-link">拼图</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="关于通用化前端组件拆分与项目模版搭建"><a href="#关于通用化前端组件拆分与项目模版搭建" class="header-anchor">#</a> 关于通用化前端组件拆分与项目模版搭建</h1> <h2 id="技术栈"><a href="#技术栈" class="header-anchor">#</a> 技术栈</h2> <ol><li>Vite</li> <li>TypeScript</li> <li>Vue3</li> <li>Sass</li> <li>Axios</li> <li>Eslint</li> <li>Node.js</li></ol> <h2 id="开发步骤"><a href="#开发步骤" class="header-anchor">#</a> 开发步骤</h2> <ol><li>制定组件需求文档，注明组件所需props emits slot等（目标：组件文档）；</li> <li>完成常用组件库封装，例如活动规则、登陆、排行榜等（目标：直接引入组件并进行简单配置注入后使用 &lt;components :data=&quot;data&quot;&gt;&lt;/components&gt;）；</li> <li>针对项目创建通用模版，例如答题类，引入所需组件后创建模版项目，使后续开发可git clone快速搭建（目标：重复需求产生时按照对应模版克隆建项）;</li> <li>封装脚手架工具管理模版，使用Nodejs, commander、inquirer、download-git-repo等工具实现命令式添加模版地址，管理模版以及快速init download git repo（目标：脚手架发布到npm或自建包管理仓库，实现如：npm i -g mktzr-cli;（安装脚手架） mktzr-cli init answer-project target-dir;（根据模版名建项） mktzr-cli list;（查看模版列表））。</li></ol> <h2 id="组件"><a href="#组件" class="header-anchor">#</a> 组件</h2> <h3 id="活动规则组件"><a href="#活动规则组件" class="header-anchor">#</a> 活动规则组件</h3> <p>props：</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">必须</th> <th style="text-align:center;">默认值</th></tr></thead> <tbody><tr><td style="text-align:center;">活动规则内容</td> <td style="text-align:center;">content</td> <td style="text-align:center;">String</td> <td style="text-align:center;">false</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">关闭按钮位置</td> <td style="text-align:center;">closePosition</td> <td style="text-align:center;">'bottom-center' || 'top-right'</td> <td style="text-align:center;">false</td> <td style="text-align:center;">'bottom-center'</td></tr></tbody></table> <p>emit:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">参数</th></tr></thead> <tbody><tr><td style="text-align:center;">切换显示状态</td> <td style="text-align:center;">stateChange</td> <td style="text-align:center;">当前显示状态:Boolean</td></tr></tbody></table> <p>slot:
+该组件插槽为条件展示，当传递插槽时显示插槽内容，未传递插槽内容显示props.content内容</p> <h3 id="内部手机号登陆组件"><a href="#内部手机号登陆组件" class="header-anchor">#</a> 内部手机号登陆组件</h3> <p>props:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">必须</th> <th style="text-align:center;">默认值</th></tr></thead> <tbody><tr><td style="text-align:center;">手机号placeholder</td> <td style="text-align:center;">telPlaceholder</td> <td style="text-align:center;">String</td> <td style="text-align:center;">false</td> <td style="text-align:center;">'请填写手机号'</td></tr> <tr><td style="text-align:center;">短信验证码placeholder</td> <td style="text-align:center;">verifyPlaceholder</td> <td style="text-align:center;">String</td> <td style="text-align:center;">false</td> <td style="text-align:center;">'请填写验证码'</td></tr> <tr><td style="text-align:center;">重新获取等待时间(s)</td> <td style="text-align:center;">delay</td> <td style="text-align:center;">Number</td> <td style="text-align:center;">false</td> <td style="text-align:center;">60</td></tr> <tr><td style="text-align:center;">标题</td> <td style="text-align:center;">title</td> <td style="text-align:center;">String</td> <td style="text-align:center;">false</td> <td style="text-align:center;">'先登录再抽奖'</td></tr> <tr><td style="text-align:center;">是否允许关闭</td> <td style="text-align:center;">allowClose</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;">false</td> <td style="text-align:center;">false</td></tr></tbody></table> <p>emits:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">参数</th></tr></thead> <tbody><tr><td style="text-align:center;">提交登陆</td> <td style="text-align:center;">login</td> <td style="text-align:center;">{tel, verify}</td></tr></tbody></table> <h3 id="排行榜"><a href="#排行榜" class="header-anchor">#</a> 排行榜</h3> <p>props:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">必须</th> <th style="text-align:center;">默认值</th></tr></thead> <tbody><tr><td style="text-align:center;">排行榜数据</td> <td style="text-align:center;">list</td> <td style="text-align:center;">{[nickname: String,<br>rank: Number]}</td> <td style="text-align:center;">true</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">本人排名</td> <td style="text-align:center;">myRanking</td> <td style="text-align:center;">[nickname: String,<br> rank: Number]</td> <td style="text-align:center;">false</td> <td style="text-align:center;">[]</td></tr></tbody></table> <h3 id="答题"><a href="#答题" class="header-anchor">#</a> 答题</h3> <p>props:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">必须</th> <th style="text-align:center;">默认值</th></tr></thead> <tbody><tr><td style="text-align:center;">题目信息</td> <td style="text-align:center;">topic</td> <td style="text-align:center;">{question: String,<br>correct: Number,<br>option: Array}</td> <td style="text-align:center;">true</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">限时(s)</td> <td style="text-align:center;">limitTime</td> <td style="text-align:center;">Number</td> <td style="text-align:center;">false</td> <td style="text-align:center;">10</td></tr></tbody></table> <p>emits:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">参数</th></tr></thead> <tbody><tr><td style="text-align:center;">作答</td> <td style="text-align:center;">complete</td> <td style="text-align:center;">(correct, choose)</td></tr></tbody></table> <h3 id="拼图"><a href="#拼图" class="header-anchor">#</a> 拼图</h3> <p>props:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">必须</th> <th style="text-align:center;">默认值</th></tr></thead> <tbody><tr><td style="text-align:center;">拼图块数量</td> <td style="text-align:center;">count</td> <td style="text-align:center;">Number</td> <td style="text-align:center;">false</td> <td style="text-align:center;">9</td></tr> <tr><td style="text-align:center;">限时(s)</td> <td style="text-align:center;">limitTime</td> <td style="text-align:center;">Number</td> <td style="text-align:center;">false</td> <td style="text-align:center;">60</td></tr></tbody></table> <p>emits:</p> <table><thead><tr><th style="text-align:center;">注释</th> <th style="text-align:center;">名称</th> <th style="text-align:center;">参数</th></tr></thead> <tbody><tr><td style="text-align:center;">完成</td> <td style="text-align:center;">complete</td> <td style="text-align:center;">(useTime, isSuccess)</td></tr></tbody></table> <p>slots:
+插槽部分定义拼图块</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新：:</span> <span class="time">3/12/2024, 3:17:51 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3e685136.js" defer></script><script src="/assets/js/2.83fabbb5.js" defer></script><script src="/assets/js/24.2ada96a3.js" defer></script>
+  </body>
+</html>
